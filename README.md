@@ -1,3 +1,8 @@
+<img width="1536" height="1024" alt="f65ef445-c6d6-4e3b-9193-6e2d567957d6" src="https://github.com/user-attachments/assets/fba22e0e-6ae3-43a8-a178-05690e4bed94" />
+
+
+
+
 # aws-ai-speech-processing-pipeline
 End-to-end AI pipeline using AWS Transcribe, Polly, Textract, and S3 to process documents and convert speech ↔ text
 # AI Speech Processing Pipeline (AWS)
