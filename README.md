@@ -35,65 +35,15 @@ The system extracts text from documents, converts speech to text, and generates 
 
 ### Step 2: Speech to Text
 
-* Audio file processed using Amazon Transcribe
-* Transcription output generated
-
-[download.wav](https://github.com/user-attachments/files/27259074/download.wav)
 
 ### Step 3: Text to Speech
 
-* Extracted/transcribed text sent to Amazon Polly
-* MP3 audio file generated
-
-```python
-response = polly.synthesize_speech(
-    Text=text[:3000],
-    OutputFormat="mp3",
-    VoiceId="Joanna"
-)
-
-audio_stream = response['AudioStream'].read()
-
-s3.Object(bucket_name, f"diy-output/{filename}.mp3").put(
-    Body=audio_stream
-)
-```
-
----
 
 ### Step 4: Storage
 
-* Output audio stored in Amazon S3
-
-![S3 Output](screenshots/s3-audio-output.png)
-
----
-
 ### Step 5: Playback
 
-* Audio player rendered inside SageMaker notebook
 
-![Audio Player](screenshots/audio-player.png)
-
----
-
-## 📒 Notebook
-
-Main execution file:
-
-```bash
-notebooks/UseAI-Notebook.ipynb
-```
-
----
-
-## 📸 Screenshots
-
-### Notebook Overview
-
-![Notebook](screenshots/notebook-overview.png)
-
----
 
 ## 🔑 Key Features
 
