@@ -20,9 +20,7 @@ The system extracts text from documents, converts speech to text, and generates 
 
 ---
 
-## 🏗️ Architecture
 
-![Architecture](architecture/architecture-diagram.png)
 
 ---
 
@@ -40,9 +38,7 @@ The system extracts text from documents, converts speech to text, and generates 
 * Audio file processed using Amazon Transcribe
 * Transcription output generated
 
-![Transcription Output](screenshots/transcription-output.png)
-
----
+[download.wav](https://github.com/user-attachments/files/27259074/download.wav)
 
 ### Step 3: Text to Speech
 
